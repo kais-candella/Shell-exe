@@ -1,9 +1,24 @@
+#!/bin/bash
 
-while IFS=, read -r col1 col2 
+
+
+file=$1
+
+
+
+
+
+while IFS=, read -r col1
+
  do
-  echo "I got:$col1|$col2" 
 
-done < Shell_Userlist.csv
+ 
+
+  echo "$col1"
+
+
+
+done <"$file" 
+
   
-
 
